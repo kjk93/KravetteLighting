@@ -1,0 +1,345 @@
+.headerContainer {
+  position: fixed;
+  width: 100vw;
+  padding: 1em;
+  font-size: 1.3em;
+  color: white;
+  background-image: -webkit-linear-gradient(right, black 20%, transparent 22%);
+  background-image: -moz-linear-gradient(right, black 20%, transparent 22%);
+  background-image: -o-linear-gradient(right, black 20%, transparent 22%);
+  background-image: -ms-linear-gradient(right, black 20%, transparent 22%);
+  background-image: linear-gradient(right, black 20%, transparent 22%); }
+  .headerContainer .navLink {
+    position: relative;
+    text-align: center; }
+    .headerContainer .navLink:before {
+      content: '';
+      opacity: 0;
+      border: solid transparent;
+      height: 0;
+      width: 0;
+      position: absolute;
+      border-bottom-color: rgba(255, 255, 255, 0.5);
+      top: -3.6em;
+      transition: all .5s .1s; }
+    .headerContainer .navLink:after {
+      content: '';
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+      border-width: 18px 8px;
+      border-color: transparent;
+      border-style: solid;
+      border-bottom-color: white;
+      border-bottom-left-radius: 100%;
+      border-bottom-right-radius: 100%;
+      transition: all .5s; }
+    .headerContainer .navLink:hover {
+      cursor: pointer; }
+      .headerContainer .navLink:hover:before {
+        opacity: 1; }
+      .headerContainer .navLink:hover:after {
+        opacity: 1; }
+  .headerContainer .photos:before {
+    border-width: 3rem 2rem;
+    left: -1px; }
+  .headerContainer .photos:after {
+    top: -2.6em;
+    left: 1.14em; }
+  .headerContainer .resume:before {
+    border-width: 3rem 2.4rem;
+    left: -1px; }
+  .headerContainer .resume:after {
+    border-width: 18px 9px;
+    top: -2.6em;
+    left: 1.4em; }
+
+.tab {
+  color: white;
+  background: black;
+  padding: 10px 20px;
+  font-size: 20px;
+  transition: all 2s;
+  position: relative;
+  transition: all 2s; }
+
+.tab a {
+  color: white; }
+
+.tab:hover {
+  cursor: pointer; }
+
+.tab:before {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -36px;
+  border-width: 33px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: rgba(255, 255, 255, 0.5);
+  transition: all .5s .1s; }
+
+.tab:after {
+  content: '';
+  opacity: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: -10px;
+  left: 46px;
+  border-width: 9px 7px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: white;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  transition: all .5s; }
+
+.tab:hover:before {
+  opacity: 1; }
+
+.tab:hover:after {
+  opacity: 1; }
+
+.light {
+  position: absolute;
+  background-color: white;
+  width: 0;
+  height: 0;
+  border-width: 16px 9px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: white;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%; }
+
+.light:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 16px 9px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: white;
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%; }
+
+.tab:before:hover {
+  border-bottom-color: rgba(255, 255, 255, 0.5); }
+
+.homeContainer .section {
+  height: 34vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 40%;
+  background-position-x: center; }
+  .homeContainer .section:nth-child(1) {
+    height: 89vh;
+    background-position: center; }
+
+.homeContainer .sectionHoverArea {
+  height: 100%;
+  width: 100%;
+  transition: all .5s; }
+  .homeContainer .sectionHoverArea:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    width: 90%; }
+    .homeContainer .sectionHoverArea:hover.even {
+      margin-right: 5vw; }
+    .homeContainer .sectionHoverArea:hover.odd {
+      margin-left: 5vw; }
+
+.homeContainer .textArea.even {
+  background-image: -webkit-linear-gradient(right, black 25%, rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(right, black 25%, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(right, black 25%, rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(right, black 25%, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(right, black 25%, rgba(255, 255, 255, 0)); }
+
+.homeContainer .textArea.odd {
+  background-image: -webkit-linear-gradient(left, black 25%, rgba(255, 255, 255, 0));
+  background-image: -moz-linear-gradient(left, black 25%, rgba(255, 255, 255, 0));
+  background-image: -o-linear-gradient(left, black 25%, rgba(255, 255, 255, 0));
+  background-image: -ms-linear-gradient(left, black 25%, rgba(255, 255, 255, 0));
+  background-image: linear-gradient(left, black 25%, rgba(255, 255, 255, 0)); }
+
+.homeContainer .textArea .title {
+  font-size: 3rem;
+  padding-bottom: 2rem; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  background: black;
+  color: white; }
+  body .main-view {
+    margin-top: 4em; }
+
+/***** Header *****/
+/*.headerContainer{
+    position: fixed;
+    width: 100vw;
+    padding: 1em;
+    font-size: 1.3em;
+    color: white;
+
+    .navLink{
+        position: relative;
+        text-align: center;
+
+        &:before{
+            content: '';
+            opacity: 0;
+            border: solid transparent;
+            height: 0;
+            width: 0;
+            position: absolute;
+            border-bottom-color: rgba(255, 255, 255, .5);
+            top: -3.6em;
+            transition: all .5s .1s;
+        }
+        &:after{
+            content: '';
+            position: absolute;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            border-width: 18px 8px;
+            border-color: transparent;
+            border-style: solid;
+            border-bottom-color: white;
+            border-bottom-left-radius: 100%;
+            border-bottom-right-radius: 100%;
+            transition: all .5s;
+        }
+
+        &:hover{
+            cursor: pointer;
+            &:before{
+                opacity: 1;
+            }
+            &:after{
+                opacity: 1;
+            }
+        }
+    }
+    .photos{
+        &:before{
+            border-width:2.3em 1.6em;
+            left: -1px;
+        }
+
+        &:after{
+            top: -2.6em;
+            left: 1.14em;
+        }
+    }
+
+    .resume{
+        &:before{
+            border-width:2.3em 1.9em;
+            left: -1px;
+        }
+
+        &:after{
+            border-width: 18px 9px;
+            top: -2.6em;
+            left: 1.4em;
+        }
+    }
+}
+
+//Before Full Site CSS
+
+.tab{
+    color: white;
+    background: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    transition: all 2s;
+    position: relative;
+    transition: all 2s;
+}
+
+.tab a{
+    color: white;
+}
+
+.tab:hover{
+    cursor: pointer;
+}
+
+.tab:before{
+    content: '';
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -36px;
+    border-width: 33px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: rgba(255, 255, 255, .5);
+    transition: all .5s .1s 
+}
+
+.tab:after{
+    content: '';
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: -10px;
+    left: 46px;
+    border-width: 9px 7px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: white;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    transition: all .5s;
+}
+
+.tab:hover:before{
+    opacity: 1;
+}
+
+.tab:hover:after{
+    opacity: 1;
+}
+
+.light{
+    position: absolute;
+    background-color: white;
+    width: 0;
+    height: 0;
+    border-width: 16px 9px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: white;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+
+.light:before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 16px 9px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: white;
+    border-bottom-right-radius: 100%;
+    border-bottom-left-radius: 100%;
+}
+
+.tab:before:hover{
+    border-bottom-color: rgba(255, 255, 255, .5);
+}*/

@@ -1,0 +1,19 @@
+<div layout="column" class="homeContainer">
+    <div ng-repeat="section in home.sections" layout="row" layout-align="end stretch" bg-img="{{section.picture}}" class="section">
+        <!-- even iteration -->
+        <div ng-if="$index%2 === 0" layout="column" layout-align="center end" layout-padding flex=100 class="textArea even">
+            <div class="sectionHoverArea even" layout="column" layout-align="center end">
+                <div class="title">{{section.title}}</div>
+                <div class="summary">{{section.text}}</div>
+            </div>
+        </div>
+
+        <!-- odd iteration -->
+        <div ng-if="$index%2 === 1" layout="column" layout-align="center start" layout-padding flex=100 class="textArea odd">
+            <div class="sectionHoverArea odd" layout="column" layout-align="center start">
+                <div class="title">{{section.title}}</div>
+                <div class="summary">{{section.text}}</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,54 @@
+.homeContainer{
+    .section{
+        height: 34vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: 40%;
+        background-position-x: center;
+        &:nth-child(1){
+            height: 89vh;
+            background-position: center;
+        }
+    }
+
+    .sectionHoverArea{
+        height: 100%;
+        width: 100%;
+        transition: all .5s;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+            width: 90%;
+            &.even{
+                margin-right: 5vw;
+            }
+
+            &.odd{
+                margin-left: 5vw;
+            }
+        }
+    }
+
+    .textArea{
+        &.even{
+            background-image: -webkit-linear-gradient(right, rgba(0,0,0,1) 25%,rgba(255,255,255,0));
+            background-image: -moz-linear-gradient(right, rgba(0,0,0,1) 25%,rgba(255,255,255,0));
+            background-image: -o-linear-gradient(right, rgba(0,0,0,1) 25%,rgba(255,255,255,0));
+            background-image: -ms-linear-gradient(right, rgba(0,0,0,1) 25%,rgba(255,255,255,0));
+            background-image: linear-gradient(right, rgba(0,0,0,1) 25%,rgba(255,255,255,0));
+        }
+
+        &.odd{
+            background-image: -webkit-linear-gradient(left, rgba(0,0,0,1) 25%,rgba(255,255,255,0));
+            background-image: -moz-linear-gradient(left, rgba(0,0,0,1) 25%,rgba(255,255,255,0));
+            background-image: -o-linear-gradient(left, rgba(0,0,0,1) 25%,rgba(255,255,255,0));
+            background-image: -ms-linear-gradient(left, rgba(0,0,0,1) 25%,rgba(255,255,255,0));
+            background-image: linear-gradient(left, rgba(0,0,0,1) 25%,rgba(255,255,255,0));
+        }
+
+        .title{
+            font-size: 3rem;
+            padding-bottom: 2rem;
+        }
+    }
+}
