@@ -1,6 +1,7 @@
 //Imported styles from all files
 @import "../app/header/styles/styles";
 @import "../app/home/styles/styles";
+@import "../app/about/styles/styles";
 
 body{
     font-family: 'Raleway', sans-serif;
@@ -12,6 +13,10 @@ body{
     .main-view{
         margin-top: 4em;
     }
+}
+
+.pageTitle{
+    font-size: 5rem;
 }
 
 /***** Header *****/

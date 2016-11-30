@@ -1,8 +1,8 @@
 .headerContainer {
   position: fixed;
   width: 100vw;
-  padding: 1em;
-  font-size: 1.3em;
+  padding: 1.4rem;
+  font-size: 1.3rem;
   color: white;
   background-image: -webkit-linear-gradient(right, black 20%, transparent 22%);
   background-image: -moz-linear-gradient(right, black 20%, transparent 22%);
@@ -139,7 +139,7 @@
   background-position-y: 40%;
   background-position-x: center; }
   .homeContainer .section:nth-child(1) {
-    height: 89vh;
+    height: 91vh;
     background-position: center; }
 
 .homeContainer .sectionHoverArea {
@@ -173,6 +173,9 @@
   font-size: 3rem;
   padding-bottom: 2rem; }
 
+.aboutMeBlurb {
+  font-size: 1.3rem; }
+
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
@@ -180,6 +183,9 @@ body {
   color: white; }
   body .main-view {
     margin-top: 4em; }
+
+.pageTitle {
+  font-size: 5rem; }
 
 /***** Header *****/
 /*.headerContainer{

@@ -34,7 +34,7 @@ gulp.task('inject', function(){
         ignorePath: '../public'
     };
 
-    return gulp.src('./src/**/*.html')
+    return gulp.src('./src/*.html')
         .pipe(wiredep(options))
         .pipe(inject(injectSrc, injectOptions))
         .pipe(gulp.dest('./src'));
@@ -78,7 +78,7 @@ gulp.task('watch', function(){
     gulp.watch(htmlFiles, ['toPublic', 'style', 'inject']);
 });
 
-gulp.task('server', ['toPublic', 'assetsToPublic', 'style', 'inject', 'sass'], function(){
+gulp.task('server', ['assetsToPublic', 'toPublic', 'style', 'inject', 'sass'], function(){
     server.run(['app.js']);
 
     gulp.watch(jsFiles, function(event){

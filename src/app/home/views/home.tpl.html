@@ -1,5 +1,5 @@
 <div layout="column" class="homeContainer">
-    <div ng-repeat="section in home.sections" layout="row" layout-align="end stretch" bg-img="{{section.picture}}" class="section">
+    <div ng-repeat="section in home.sections" layout="row" layout-align="end stretch" bg-img="{{section.picture}}" class="section" ng-click="home.routeTo(section.route)">
         <!-- even iteration -->
         <div ng-if="$index%2 === 0" layout="column" layout-align="center end" layout-padding flex=100 class="textArea even">
             <div class="sectionHoverArea even" layout="column" layout-align="center end">
